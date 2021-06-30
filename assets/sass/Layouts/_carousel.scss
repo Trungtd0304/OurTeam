@@ -1,0 +1,30 @@
+#carousel {
+  position: relative;
+  .carouselImgTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    img {
+      @include styleImg($wi-3, $wi-4);
+    }
+  }
+
+  .container {
+    z-index: 3;
+    padding: $pd-3 0;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        @include styleText($fs-2, $fw-2, $color-prink-1);
+        margin-bottom: $mg-1;
+      }
+      span {
+        @include styleText($fs-3, $fw-3, $color-black-light-1);
+        line-height: 1.2;
+      }
+    }
+  }
+}

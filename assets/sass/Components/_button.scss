@@ -1,0 +1,11 @@
+.btnOur-prink {
+  @include styleButton($color-prink-1, $bd-1, $border-radius-3, $pd-5, $pd-4);
+  @include styleText($fs-2, $fw-2, $color-white-1);
+  height: $wi-5;
+  &:hover {
+    @include styleButtonHover($color-white-1, $color-prink-1);
+  }
+}
+.btnOur-white {
+  @include styleButton($color-white-1, $bd-2, $border-radius-3, $pd-5, $pd-4);
+}

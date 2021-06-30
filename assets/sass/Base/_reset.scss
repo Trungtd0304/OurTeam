@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: $fw-1;
+  line-height: $line-height-0;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.card {
+  border: none;
+  border-radius: $border-radius-1;
+  background-color: $color-white-3;
+}
+.carouselImgBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  img {
+    @include styleImg($wi-3, $wi-4);
+  }
+}
