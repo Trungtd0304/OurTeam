@@ -1,0 +1,67 @@
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  .nav-item {
+    color: $color-black-light-1;
+  }
+  .navbar-toggler-icon {
+    font-size: $fs-1;
+    line-height: $line-height-0;
+  }
+  #collapsibleNavId {
+    ul li a {
+      position: relative;
+    }
+
+    .nav-link {
+      @include styleText($fs-0, $fw-2, $color-black-light-1);
+      padding-right: 40px;
+      line-height: $line-height-1;
+      &::after {
+        content: "";
+        width: $wi-1;
+        height: $wi-1;
+        display: block;
+        background-color: $color-prink-1;
+        border-radius: $border-radius-2;
+        position: absolute;
+        left: 30%;
+        bottom: 4px;
+        transform: scale(0);
+      }
+      &:hover {
+        @include styleText($fs-0, $fw-2, $color-prink-1);
+        &::after {
+          transform: scale(1.6);
+        }
+      }
+    }
+    .active {
+      .nav-link {
+        @include styleText($fs-0, $fw-2, $color-prink-1);
+        &::after {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .btPhone {
+    display: flex;
+    line-height: $wi-2;
+    align-items: center;
+  }
+  .btButtonWidget {
+    font-size: $fs-2;
+    display: inline-block;
+    line-height: 1;
+    margin-left: $ml-1;
+    color: $color-black-light-1;
+    .btButtonWidgetLink {
+      padding: $pd-1 $pd-2;
+      background-color: $color-prink-1;
+      border-radius: $border-radius-3;
+      color: $color-white-1;
+    }
+  }
+}

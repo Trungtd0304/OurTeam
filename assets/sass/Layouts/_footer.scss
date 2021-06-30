@@ -1,0 +1,34 @@
+.footer {
+  // background-color: $color-prink-1; =>a để e thao tác nhé
+  background-image: url(./../img/footer_background.png); // đường dẫn này hiện tại đang là của file scss => nhưng compile ra css thì nó ko đổi đường dẫn
+  // nên là a phải dùng đường dẫn như thể mình đang đứng tại css nhé
+  background-size: cover;
+  background-position: center bottom;
+  height: 480px; // oke rồi đó a
+  padding: 120px 0;
+  .content {
+    padding: $pd-8 0;
+    h4 {
+      @include styleText($fs-1, $fw-3, $color-white-1);
+    }
+    span,
+    a {
+      @include styleText($fs-2, $fw-1, $color-white-1);
+    }
+    i {
+      color: $color-white-1;
+      padding-right: 10px;
+    }
+    .list {
+      display: flex;
+      flex-direction: column;
+      a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+      input {
+        @include styleButton($bd-1, $border-1, $border-radius-3, $pd-8, $pd-1);
+        
+      }
+    }
+  }
+}

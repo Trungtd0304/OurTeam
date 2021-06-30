@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.carouselImgBottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.carouselImgBottom img {
+  width: 100%;
+  height: auto;
+}
+
+.btnOur-prink {
+  background: #b61984;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 44px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  height: 4em;
+}
+
+.btnOur-prink:hover {
+  background: #fff;
+  color: #b61984;
+}
+
+.btnOur-white {
+  background: #fff;
+  border: 8px;
+  border-radius: 50px;
+  padding: 14px 44px;
+}
+
+#products .cardPhone {
+  overflow: hidden;
+}
+
+#products .cardPhone img {
+  transition: 1s;
+}
+
+#products .cardPhone img:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+#products .cardPhone .card__title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #b61984;
+}
+
+#products .cardPhone .card__content {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #181818;
+}
+
+#products .cardPhone .card__span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #181818;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header .nav-item {
+  color: #181818;
+}
+
+header .navbar-toggler-icon {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+header #collapsibleNavId ul li a {
+  position: relative;
+}
+
+header #collapsibleNavId .nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #181818;
+  padding-right: 40px;
+  line-height: 80px;
+}
+
+header #collapsibleNavId .nav-link::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: block;
+  background-color: #b61984;
+  border-radius: 50%;
+  position: absolute;
+  left: 30%;
+  bottom: 4px;
+  transform: scale(0);
+}
+
+header #collapsibleNavId .nav-link:hover {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b61984;
+}
+
+header #collapsibleNavId .nav-link:hover::after {
+  transform: scale(1.6);
+}
+
+header #collapsibleNavId .active .nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #b61984;
+}
+
+header #collapsibleNavId .active .nav-link::after {
+  transform: scale(1.1);
+}
+
+header .btPhone {
+  display: flex;
+  line-height: 38px;
+  align-items: center;
+}
+
+header .btButtonWidget {
+  font-size: 0.9rem;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 1em;
+  color: #181818;
+}
+
+header .btButtonWidget .btButtonWidgetLink {
+  padding: 1.1em 1.5em;
+  background-color: #b61984;
+  border-radius: 50px;
+  color: #fff;
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .carouselImgTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#carousel .carouselImgTop img {
+  width: 100%;
+  height: auto;
+}
+
+#carousel .container {
+  z-index: 3;
+  padding: 6em 0;
+}
+
+#carousel .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#carousel .container .content h1 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #b61984;
+  margin-bottom: 0.5em;
+}
+
+#carousel .container .content span {
+  font-size: 3.15rem;
+  font-weight: 700;
+  color: #181818;
+  line-height: 1.2;
+}
+
+.products {
+  background-color: #dcd1f3;
+  position: relative;
+}
+
+.products .cardPhone {
+  z-index: 1;
+}
+
+.products .cardPhone:hover {
+  box-shadow: 0px 20px 50px rgba(24, 24, 24, 0.1);
+}
+
+.services {
+  position: relative;
+}
+
+.services .container .services_content {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.services .container .title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #181818;
+  line-height: 1.8rem;
+  letter-spacing: 0.09rem;
+}
+
+.services .container .itemSer {
+  position: relative;
+}
+
+.services .container .itemSer .fa {
+  position: absolute;
+  top: 40%;
+  color: #b61984;
+}
+
+.services .container .itemSer .fa-comment-alt {
+  top: 10%;
+}
+
+.services .container .itemSer input,
+.services .container .itemSer textarea {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.services .container .itemSer input {
+  max-width: 100%;
+}
+
+.footer {
+  background-image: url(./../img/footer_background.png);
+  background-size: cover;
+  background-position: center bottom;
+  height: 480px;
+  padding: 120px 0;
+}
+
+.footer .content {
+  padding: 0.4em 0;
+}
+
+.footer .content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer .content span,
+.footer .content a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer .content i {
+  color: #fff;
+  padding-right: 10px;
+}
+
+.footer .content .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .content .list a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .content .list input {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: 0.4em 1.1em;
+}
+/*# sourceMappingURL=main.css.map */

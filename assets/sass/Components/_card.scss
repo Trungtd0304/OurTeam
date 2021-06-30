@@ -1,0 +1,22 @@
+#products {
+  .cardPhone {
+    overflow: hidden;
+    img {
+      //   transform: scale3d(1.05, 1.05, 1.05);
+      transition: 1s;
+      &:hover {
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+    }
+
+    .card__title {
+      @include styleText($fs-2, $fw-2, $color-prink-1);
+    }
+    .card__content {
+      @include styleText($fs-1, $fw-2, $color-black-light-1);
+    }
+    .card__span {
+      @include styleText($fs-0, $fw-1, $color-black-light-1);
+    }
+  }
+}
